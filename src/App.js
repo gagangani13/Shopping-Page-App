@@ -18,7 +18,6 @@ function App() {
       }
       dispatch(sendCartDataThunk(cart))
   },[cart,dispatch])
-
   return (
     <>
     {notify&&<Notification title={notify.title} status={notify.status} message={notify.message} />}
